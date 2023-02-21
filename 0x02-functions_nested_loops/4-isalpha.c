@@ -5,6 +5,7 @@
  * @c: the int to check
  * Return: the absolute value of int
  */
+
 int _abs(int c)
 {
 	if (c >= 0)
@@ -16,4 +17,3 @@ int _abs(int c)
 		return (-c);
 	}
 }
-
