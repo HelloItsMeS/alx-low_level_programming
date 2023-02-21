@@ -1,19 +1,16 @@
 #include "main.h"
 
 /**
- * _abs - a function that computes the absolute value of an integer.
- * @c: the int to check
- * Return: the absolute value of int
+ * _isalpha - checks for alphabetic character
+ * @c: the character to be checked
+ * Return: 1 if c is a letter, 0 otherwise
  */
 
-int _abs(int c)
+int _isalpha(int c)
 {
-	if (c >= 0)
-	{
-		return (c);
-	}
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
 	else
-	{
-		return (-c);
-	}
+		return (0);
 }
+
