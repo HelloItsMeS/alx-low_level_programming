@@ -3,10 +3,11 @@
 /**
  * isalpha -  a  function that checks for alphabetic character. 
  *@c: is the char to be checked
- * Return: 1 if char is lowercase, otherwise 0.
+ * Returns 1 if c is a letter, lowercase or uppercase
+ * Returns 0 otherwise
  */
 
-int isalpha(int c)
+int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
