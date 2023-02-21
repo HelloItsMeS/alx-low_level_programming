@@ -13,7 +13,7 @@ int print_last_digit(int c)
 	
 	if(c == INT_MIN)
 	{
-	    last_number = 8;
+		last_number = 8;
 	}
 	else if (c < 0)
 	{
@@ -22,7 +22,7 @@ int print_last_digit(int c)
 	}
 	else
 	{
-	    last_number = c % 10;
+		last_number = c % 10;
 	}
 	putchar(last_number + '0');
 	return (last_number);
