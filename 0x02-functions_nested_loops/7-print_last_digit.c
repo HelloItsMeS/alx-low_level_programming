@@ -6,15 +6,24 @@
  * @c: the giving value
  * Return: the value.
  */
+
 int print_last_digit(int c)
 {
 	int last_number;
-
-	if (c < 0)
-	{
-		c = (c * (-1));
-	}
 	
-	last_number = c % 10;
+	if(c == INT_MIN)
+	{
+	    last_number = 8;
+	}
+	else if (c < 0)
+	{
+		c = -c;
+		last_number = c % 10;
+	}
+	else
+	{
+	    last_number = c % 10;
+	}
+	putchar(last_number + '0');
 	return (last_number);
 }
